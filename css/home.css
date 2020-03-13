@@ -1,0 +1,278 @@
+@font-face{
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+}
+
+@font-face{
+    font-family: Source;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+}
+
+
+:root{
+    --background-col: #152238;
+    --welcome-txt:  #bfc9ca;
+    --nav-col:  #bfc9ca;
+    --nav-col-hover: #d5dbdb;
+
+}
+
+*{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background-col);
+}
+
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5em;
+    display: flex;
+    justify-content: end;
+    background-color: var(--background-col);
+    /* box-shadow: 0px 5px 5px #121d30; */
+    z-index: 5;
+}
+
+.header .nav{
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    background-color: var(--background-col);
+}
+
+.title{
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.header .title a{
+    color: var(--nav-col);
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--background-col);
+    transition: transform .5s;
+}
+
+.header .title a:hover{
+    color: var(--nav-col-hover);
+    text-decoration: none;
+    /* font-size: 2.25vw; */
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--background-col);
+    transform: scale(1.3);
+}
+
+.header .nav a{
+    color: var(--nav-col);
+    text-decoration: none;
+    font-size: 1.75vw;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--background-col);
+    transition: transform .5s;
+}
+
+.header .nav a:hover{
+    color: var(--nav-col-hover);
+    /* font-size: 2vw; */
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--background-col);
+    transform: scale(1.3);
+}
+
+.banner{
+    position: absolute;
+    height: 89vh;
+    background-color: var(--background-col);
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    padding-top: 80px;
+}
+
+.welcome-text{
+    display: block;
+    padding-top: 200px;
+    left: 30px;
+    /* background-color: azure; */
+    width: 100%;
+}
+
+.banner .welcome-text .greet{
+    color: var(--welcome-txt);
+    font-size: 9vw;
+    width: 100%;
+    height: 1em;
+    text-align: center;
+}
+
+.name{
+    color: var(--welcome-txt);
+    font-size: 3vw;
+    text-align: center;
+}
+
+.sub{
+    color: var(--welcome-txt);
+    text-align: center;
+    font-size: 1.8vw;
+    
+}
+
+.sub-nav{
+    position: absolute;
+    top: 89vh;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: var(--background-col); */
+    background-color: transparent;
+    height: 5em;
+    align-items: flex-start;
+    box-shadow: 0px -5px 5px #121d30;
+}
+
+.sub-nav .nav-s{
+    width: 25%;
+    top: 0;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-nav .nav-s p{
+    font-size: 4vh;
+    color: var(--welcome-txt);
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.nav-s:hover{
+    cursor: pointer;
+}
+/* .nav-s:hover p{
+    color: var(--nav-col-hover);
+} */
+/* 
+#about{
+    background-color: var(--welcome-txt);
+    box-shadow: 5px -5px 2px #121d30;
+    z-index: 1;
+}
+
+#about:hover{
+    cursor: pointer;
+}
+
+#about p{
+    color: var(--background-col);
+} */
+
+.info{
+    display: none;
+    position: absolute;
+    top: 100vh;
+    background-color: var(--welcome-txt);
+    height: 80vh;
+    width: 100%;
+    box-shadow: 0px -5px 5px #121d30;
+    z-index: 0;
+}
+
+.info .aboutinf{
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.para{
+    width: 40%;
+}
+
+.para p{
+    font-size: 1.5vw;
+    margin-left: 10%;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--background-col);
+    text-align: justify;
+    width: 100%;
+}
+
+.ima{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.ima img{
+    width: 350px;
+    height: auto;
+    border-radius: 175px;
+    
+}
+
+.personalinf{
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bloginf{
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projectinf{
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.soon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.soon p{
+    font-family: "Lexend Deca";
+    font-size: 50px;
+    color: var(--background-col);
+}
+
+.personalinf table tr td{
+    font-family: "Lexend Deca";
+    font-size: 1.5vw;
+    color: var(--background-col);
+    padding-left: 20px;
+}
+
+

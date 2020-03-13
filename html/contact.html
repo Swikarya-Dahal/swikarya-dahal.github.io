@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="..\css\contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+	<script src="..\js\contact.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="title">
+			<a href="#top">Contact Me</a>
+		</div>
+		<div class="nav">
+			<a href="..\index.html">Home</a>
+			<a href=".\contact.html">Contact me</a>
+			<a href=".\gallery.html">Gallery</a>
+		</div>
+    </div>
+    <div class="work">
+        <div class="container">
+            <div class="message">
+                <p>If you happen to have any questions, please specify them here and 
+                submit it and i'll try my best to get to your question as soon as possible.<br><br>
+                You can also mail me at my PO box:<br>&emsp;&emsp;Swikarya Dahal <br>&emsp;&emsp;Haleshi Marg-Mangadh-7<br>&emsp;&emsp;Biratnagar 56613<br>&emsp;&emsp;Nepal
+                <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-Swikarya Dahal</p>
+            </div>
+            <div class="form">
+                <form action="">
+                    <p id="pers">Provide your contact info for me to answer you.</p><br>
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="text" placeholder="Email" id="email"><br><br>
+                    <p id="aboot">What is your question about?</p>
+                    <br><p>About:</p><br>
+                    <input type="radio" value="website" name="button">
+                    <label for="website">&emsp;Website</label><br>
+                    <input type="radio" value="My Works" name="button">
+                    <label for="My Works">&emsp;My Works</label><br>
+                    <input type="radio" value="Me" name="button">
+                    <label for="Me">&emsp;Me</label><br>
+                    <input type="radio" value="Programming" name="button">
+                    <label for="Programming">&emsp;Programming</label><br><br>
+                    <p>Question:</p><br>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Write your question here."></textarea>
+                    <input type="submit" value="Submit" id="submit" onclick="alertn()">
+                </form>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
